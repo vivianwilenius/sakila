@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<title>Categories - Sakila DVD Rental</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Lato",sans-serif;
+    background:white;
+    color:#373435;
+}
+
+header{
+    background:#20aad8;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+header img{
+    width:140px;
+}
+
+nav{
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#92010c;
+    font-family:"Teko",sans-serif;
+    font-size:30px;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+}
+
+h1{
+    font-family:"Teko",sans-serif;
+    font-size:48px;
+    margin-bottom:25px;
+}
+
+.search{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+th{
+    background:#20aad8;
+    color:white;
+    text-align:left;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+footer{
+    margin-top:50px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="logo_tummapohja.png" alt="Logo">
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="films.html">Films</a>
+    <a href="categories.html">Categories</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h1>Categories</h1>
+
+<input
+class="search"
+type="text"
+placeholder="Search category..."
+>
+
+<table>
+
+<tr>
+    <th>Category</th>
+    <th>Movies</th>
+</tr>
+
+<tr>
+    <td>Action</td>
+    <td>64</td>
+</tr>
+
+<tr>
+    <td>Animation</td>
+    <td>66</td>
+</tr>
+
+<tr>
+    <td>Children</td>
+    <td>60</td>
+</tr>
+
+<tr>
+    <td>Comedy</td>
+    <td>58</td>
+</tr>
+
+<tr>
+    <td>Documentary</td>
+    <td>68</td>
+</tr>
+
+<tr>
+    <td>Drama</td>
+    <td>62</td>
+</tr>
+
+<tr>
+    <td>Family</td>
+    <td>69</td>
+</tr>
+
+<tr>
+    <td>Foreign</td>
+    <td>73</td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+© 2026 Sakila DVD Rental
+</footer>
+
+</body>
+</html>

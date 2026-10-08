@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<title>Sakila DVD Rental</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    background:#ffffff;
+    color:#373435;
+}
+
+header{
+    background:#20aad8;
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    font-family:"Teko", sans-serif;
+    color:#92010c;
+    font-size: 30px;
+    text-decoration:none;
+    margin-left:60px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+header input{
+    width:350px;
+    max-width:90%;
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-family: "Lato";
+    margin-bottom:25px;
+    color:#666;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:180px;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card h3{
+    font-size:40px;
+    color:#2c3e50;
+}
+
+.card p{
+    margin-top:10px;
+    color:#666;
+}
+
+.movies{
+    width:80%;
+    margin:40px auto;
+}
+
+.movies h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.movie-card{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,.08);
+}
+
+.movie-card h3{
+    margin-bottom:8px;
+}
+
+.movie-card p{
+    font-family:"Lato", sans-serif;
+}
+
+footer{
+    margin-top:60px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>
+        <img src="logo_tummapohja.png" width="250" height="250">
+    </h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="films.html">Films</a>
+        <a href="#">Actors</a>
+        <a href="#">Categories</a>
+    </nav>
+
+    <input
+        type="text"
+        placeholder="Search movies..."
+    >
+
+</header>
+
+<section class="hero">
+
+    <h2>Welcome to Sakila</h2>
+    <p>Browse movies, actors and categories</p>
+
+    <section class="stats">
+
+        <div class="card">
+            <h3>1000</h3>
+            <p>Movies</p>
+        </div>
+
+        <div class="card">
+            <h3>200</h3>
+            <p>Actors</p>
+        </div>
+
+        <div class="card">
+            <h3>16</h3>
+            <p>Categories</p>
+        </div>
+
+    </section>
+
+</section>
+
+
+
+<section class="movies">
+
+    <h2>Featured Movies</h2>
+
+    <div class="movie-card">
+        <h3>Academy Dinosaur</h3>
+        <p><strong>Category:</strong> Documentary</p>
+    </div>
+
+    <div class="movie-card">
+        <h3>Ace Goldfinger</h3>
+        <p><strong>Category:</strong> Horror</p>
+    </div>
+
+    <div class="movie-card">
+        <h3>Adaptation Holes</h3>
+        <p><strong>Category:</strong> Drama</p>
+    </div>
+
+    <div class="movie-card">
+        <h3>African Egg</h3>
+        <p><strong>Category:</strong> Family</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Sakila DVD Rental</p>
+</footer>
+
+</body>
+</html>

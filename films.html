@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<title>Films - Sakila DVD Rental</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Lato",sans-serif;
+    background:#ffffff;
+    color:#373435;
+}
+
+/* Header */
+
+header{
+    background:#20aad8;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+header img{
+    width:140px;
+    height:auto;
+}
+
+nav{
+    display:flex;
+    gap:50px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#92010c;
+    font-family:"Teko",sans-serif;
+    font-size:30px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Main */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+h1{
+    font-family:"Teko",sans-serif;
+    font-size:48px;
+    margin-bottom:25px;
+}
+
+.search{
+    width:100%;
+    padding:12px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-bottom:30px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+th{
+    background:#20aad8;
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+
+.details-btn{
+    background:#20aad8;
+    color:white;
+    padding:6px 12px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.details-btn:hover{
+    background:#198cb2;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="logo_tummapohja.png" alt="Sakila Logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="films.html">Films</a>
+        <a href="#">Categories</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <h1>Browse Films</h1>
+
+    <input
+        class="search"
+        type="text"
+        placeholder="Search films..."
+    >
+
+    <table>
+
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Rating</th>
+            <th>Rental Rate</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>Academy Dinosaur</td>
+            <td>Documentary</td>
+            <td>PG</td>
+            <td>$0.99</td>
+            <td><a href="film.html" class="details-btn">View</a></td>
+        </tr>
+
+        <tr>
+            <td>Ace Goldfinger</td>
+            <td>Horror</td>
+            <td>G</td>
+            <td>$4.99</td>
+            <td><a href="film.html" class="details-btn">View</a></td>
+        </tr>
+
+        <tr>
+            <td>Adaptation Holes</td>
+            <td>Drama</td>
+            <td>NC-17</td>
+            <td>$2.99</td>
+            <td><a href="film.html" class="details-btn">View</a></td>
+        </tr>
+
+        <tr>
+            <td>African Egg</td>
+            <td>Family</td>
+            <td>PG</td>
+            <td>$0.99</td>
+            <td><a href="film.html" class="details-btn">View</a></td>
+        </tr>
+
+        <tr>
+            <td>Agent Truman</td>
+            <td>Action</td>
+            <td>PG-13</td>
+            <td>$2.99</td>
+            <td><a href="film.html" class="details-btn">View</a></td>
+        </tr>
+
+    </table>
+
+</div>
+
+<footer>
+    © 2026 Sakila DVD Rental
+</footer>
+
+</body>
+</html>
